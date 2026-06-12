@@ -8,140 +8,140 @@ This checklist should be used alongside applicable principles, patterns, and aut
 
 ---
 
-# Structure & Semantics
+## Structure and Semantics
 
-## Document Structure
+### Document Structure
 
-* Headings communicate page and section hierarchy.
-* Heading levels are not skipped without justification.
-* Content order is meaningful.
-* Landmark regions are present when appropriate.
-* Semantic HTML is used whenever possible.
+- Headings communicate page and section hierarchy.
+- Heading levels are not skipped without justification.
+- Content order is meaningful.
+- Landmark regions are present when appropriate.
+- Semantic HTML is used whenever possible.
 
-## Semantic Elements
+### Semantic Elements
 
-* Buttons use `button` elements.
-* Links use `a` elements.
-* Lists use `ul`, `ol`, and `li`.
-* Tables use appropriate table markup.
-* Form controls use native elements where possible.
-* ARIA is not replacing available native semantics.
-
----
-
-# Keyboard Accessibility
-
-## Keyboard Navigation
-
-* All interactive elements are keyboard accessible.
-* Interactive elements can be activated using expected keyboard interactions.
-* Keyboard focus can reach all functionality.
-
-## Focus Management
-
-* Focus indicators are visible.
-* Focus order follows the visual and logical reading order.
-* Focus is managed appropriately during dynamic interactions.
-* Focus is not unexpectedly moved or lost.
-
-## Keyboard Traps
-
-* Users can navigate into and out of all interactive regions.
-* No keyboard traps are present.
+- Buttons use `button` elements.
+- Links use `a` elements.
+- Lists use `ul`, `ol`, and `li`.
+- Tables use appropriate table markup.
+- Form controls use native elements where possible.
+- ARIA is not replacing available native semantics.
 
 ---
 
-# Forms
+## Keyboard Accessibility
 
-## Labels & Accessible Names
+### Keyboard Navigation
 
-* Every form control has an accessible name.
-* Visible labels are present when appropriate.
-* Accessible names match visible labels.
-* Labels remain understandable out of context.
+- All interactive elements are keyboard accessible.
+- Interactive elements can be activated using expected keyboard interactions.
+- Keyboard focus can reach all functionality.
 
-## Instructions & Help Text
+### Focus Management
 
-* Instructions are available when needed.
-* Critical instructions remain visible.
-* Required fields are clearly identified.
-* Formatting requirements are communicated before submission.
+- Focus indicators are visible.
+- Focus order follows the visual and logical reading order.
+- Focus is managed appropriately during dynamic interactions.
+- Focus is not unexpectedly moved or lost.
 
-## Validation & Errors
+### Keyboard Traps
 
-* Errors are programmatically associated with fields.
-* Error messages are understandable and actionable.
-* Error summaries link to affected fields when present.
-* Validation feedback is announced to assistive technologies when appropriate.
-
-## Repeated Fields
-
-* Repeated field groups provide sufficient context.
-* Group relationships are conveyed programmatically.
-* Accessible names remain consistent with visible labels.
+- Users can navigate into and out of all interactive regions.
+- No keyboard traps are present.
 
 ---
 
-# Visual Accessibility
+## Forms
 
-## Color & Contrast
+### Labels and Accessible Names
 
-* Text meets required contrast ratios.
-* Interactive controls meet required contrast ratios.
-* Information is not conveyed by color alone.
+- Every form control has an accessible name.
+- Visible labels are present when appropriate.
+- Accessible names match visible labels.
+- Labels remain understandable out of context.
 
-## Zoom & Reflow
+### Instructions and Help Text
 
-* Content remains usable at 200% zoom.
-* Content reflows appropriately at smaller viewport sizes.
-* Horizontal scrolling is minimized where possible.
+- Instructions are available when needed.
+- Critical instructions remain visible.
+- Required fields are clearly identified.
+- Formatting requirements are communicated before submission.
 
-## Responsive Behavior
+### Validation and Errors
 
-* Content remains understandable across screen sizes.
-* Interactive elements remain accessible on touch devices.
+- Errors are programmatically associated with fields.
+- Error messages are understandable and actionable.
+- Error summaries link to affected fields when present.
+- Validation feedback is announced to assistive technologies when appropriate.
 
----
+### Repeated Fields
 
-# Dynamic Content
-
-## Announcements
-
-* Important status changes are communicated to assistive technologies.
-* Dynamic updates are announced when appropriate.
-
-## Modals & Dialogs
-
-* Focus moves into dialogs when opened.
-* Focus returns appropriately when dialogs close.
-* Background content is not interactable while modal dialogs are active.
+- Repeated field groups provide sufficient context.
+- Group relationships are conveyed programmatically.
+- Accessible names remain consistent with visible labels.
 
 ---
 
-# Content & Usability
+## Visual Accessibility
 
-## Readability
+### Color and Contrast
 
-* Instructions are clear and concise.
-* Error messages explain how to resolve issues.
-* Labels and headings are understandable.
+- Text meets required contrast ratios.
+- Interactive controls meet required contrast ratios.
+- Information is not conveyed by color alone.
 
-## User Understanding
+### Zoom and Reflow
 
-* Users can determine what information is required.
-* Users can understand the purpose of controls.
-* Users can complete tasks without relying on visual-only cues.
+- Content remains usable at 200% zoom.
+- Content reflows appropriately at smaller viewport sizes.
+- Horizontal scrolling is minimized where possible.
+
+### Responsive Behavior
+
+- Content remains understandable across screen sizes.
+- Interactive elements remain accessible on touch devices.
 
 ---
 
-# Review Notes
+## Dynamic Content
 
-For each issue identified:
+### Announcements
 
-* Gather evidence.
-* Match against applicable principles.
-* Match against applicable patterns.
-* Validate against authoritative references.
-* Assign confidence.
-* Recommend remediation.
-* Indicate whether human review is required.
+- Important status changes are communicated to assistive technologies.
+- Dynamic updates are announced when appropriate.
+
+### Modals and Dialogs
+
+- Focus moves into dialogs when opened.
+- Focus returns appropriately when dialogs close.
+- Background content is not interactable while modal dialogs are active.
+
+---
+
+## Content and Usability
+
+### Readability
+
+- Instructions are clear and concise.
+- Error messages explain how to resolve issues.
+- Labels and headings are understandable.
+
+### User Understanding
+
+- Users can determine what information is required.
+- Users can understand the purpose of controls.
+- Users can complete tasks without relying on visual-only cues.
+
+---
+
+## Review Notes
+
+For each potential finding:
+
+- Gather evidence.
+- Match against applicable principles.
+- Match against applicable patterns.
+- Validate against authoritative references.
+- Assign confidence.
+- Recommend remediation.
+- Indicate whether human review is required.

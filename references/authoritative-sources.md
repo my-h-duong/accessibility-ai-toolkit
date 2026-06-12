@@ -2,201 +2,161 @@
 
 ## Purpose
 
-This document identifies the primary sources used by the Accessibility AI Toolkit when evaluating accessibility findings, recommendations, and implementation guidance.
+This document identifies the highest-trust source categories used to support accessibility findings in this repository.
 
-These sources should be preferred over community articles, tutorials, blog posts, conference presentations, or AI-generated explanations.
+These sources should be preferred over tutorials, blog posts, conference talks, forum answers, and AI-generated explanations.
 
-When multiple sources conflict, follow the rules defined in `source-trust-model.md`.
+Use this document together with the [Source Trust Model](./source-trust-model.md), which defines source priority and conflict resolution.
 
----
+Implementation-oriented documentation is listed separately in [Implementation References](./implementation-references.md).
 
-# Accessibility Standards
+## How to Use This Document
 
-## WCAG
+Use authoritative sources when you need to support:
 
-### Description
+- Standards-based findings
+- Semantic HTML guidance
+- ARIA usage rules
+- Public-sector accessibility interpretation
+- Claims about required behavior or conformance
 
-The Web Content Accessibility Guidelines (WCAG) define internationally recognized accessibility requirements for digital experiences.
+If a source is helpful for implementation but is not the highest-trust authority for the claim, place it in the implementation references document instead of treating it as primary evidence.
 
-### Use For
+## Authoritative Standards and Specifications
 
-* Accessibility requirements
-* Success criteria
-* Conformance levels
-* Accessibility testing guidance
+### WCAG
 
-### Preferred Version
+#### Description
+
+The Web Content Accessibility Guidelines define internationally recognized accessibility requirements for digital experiences.
+
+#### Use For
+
+- Accessibility requirements
+- Success criteria
+- Conformance levels
+- Outcome-based evaluation
+
+#### Preferred Version
 
 WCAG 2.2
 
-### Notes
+#### Notes
 
-WCAG defines what outcomes must be achieved but does not always prescribe a specific implementation.
+WCAG defines the required outcome, but it does not always prescribe a single implementation.
 
----
+### HTML Living Standard
 
-# Semantic HTML
+#### Description
 
-## HTML Living Standard
+The HTML Living Standard is the primary specification for HTML elements, semantics, and document structure.
 
-### Description
+#### Use For
 
-The HTML Living Standard is the authoritative specification for HTML elements, semantics, and document structure.
+- Element validity
+- Semantic HTML
+- Native control behavior
+- Document structure
+- Accessibility-related HTML behavior
 
-### Use For
+#### Notes
 
-* Element validity
-* Semantic HTML
-* Document structure
-* Native control behavior
-* Accessibility-related HTML behavior
+When determining whether markup is valid or whether a native element is appropriate, prefer this source over tutorials, linter messages, or framework abstractions.
 
-### Notes
+### WAI-ARIA Specification
 
-When determining whether markup is valid, prefer the HTML Living Standard over blog posts, tutorials, or linter recommendations.
+#### Description
 
----
+The WAI-ARIA specification defines how accessibility information can be exposed when native HTML semantics are insufficient.
 
-## WHATWG
+#### Use For
 
-### Description
+- ARIA roles
+- ARIA states
+- ARIA properties
+- Accessibility API mappings
 
-The Web Hypertext Application Technology Working Group (WHATWG) maintains the HTML Living Standard.
+#### Notes
 
-### Use For
+ARIA should supplement native HTML rather than replace it when a native solution exists.
 
-* HTML specifications
-* Browser behavior
-* Modern web platform standards
+### Accessible Name and Description Computation
 
-### Notes
+#### Description
 
-The HTML Living Standard should generally be treated as the authoritative HTML reference.
+This specification defines how accessible names and descriptions are derived from labels, content, and ARIA attributes.
 
----
+#### Use For
 
-# ARIA
+- Accessible name behavior
+- Accessible description behavior
+- Label and description precedence
 
-## WAI-ARIA Specification
+#### Notes
 
-### Description
+Use this source when evaluating how a control is named or described programmatically.
 
-Defines how accessibility information can be exposed to assistive technologies when native HTML semantics are insufficient.
+## Government and Public-Sector Guidance
 
-### Use For
+### Section 508
 
-* ARIA roles
-* ARIA states
-* ARIA properties
-* Accessibility APIs
+#### Description
 
-### Notes
+Section 508 defines accessibility requirements for United States federal information and communication technology.
 
-ARIA should supplement native HTML rather than replace it whenever possible.
+#### Use For
 
----
+- Federal accessibility requirements
+- Compliance-oriented interpretation
+- Public-sector expectations
 
-## WAI-ARIA Authoring Practices Guide (APG)
+#### Notes
 
-### Description
+Section 508 often aligns with WCAG but may be consulted for public-sector implementation context.
 
-Provides implementation guidance and accessibility patterns for common user interface components.
+### U.S. Access Board Guidance
 
-### Use For
+#### Description
 
-* Dialogs
-* Menus
-* Tabs
-* Accordions
-* Comboboxes
-* Interactive widgets
+The U.S. Access Board publishes guidance related to accessibility requirements and interpretation in public-sector contexts.
 
-### Notes
+#### Use For
 
-The APG provides implementation guidance and patterns but is not a replacement for WCAG or HTML specifications.
+- Public-sector accessibility interpretation
+- Compliance context
+- Government-oriented explanatory guidance
 
----
+## Standards-Adjacent Guidance
 
-# Government Accessibility Guidance
+### WAI-ARIA Authoring Practices Guide (APG)
 
-## Section 508
+#### Description
 
-### Description
+The APG provides implementation guidance and patterns for interactive components.
 
-United States federal accessibility requirements for information and communication technology.
+#### Use For
 
-### Use For
+- Dialogs
+- Menus
+- Tabs
+- Accordions
+- Comboboxes
+- Widget interaction expectations
 
-* Federal accessibility requirements
-* Government compliance guidance
-* Public-sector accessibility expectations
+#### Notes
 
-### Notes
+The APG is strong guidance, but it is not a substitute for WCAG, HTML, or ARIA specifications when a claim depends on normative requirements.
 
-Section 508 frequently references WCAG requirements but may include additional compliance considerations.
+## Non-Authoritative Sources
 
----
+The following may provide useful context but should not be treated as primary evidence for a finding:
 
-# Framework Documentation
+- Blog posts
+- Tutorials
+- Forum discussions
+- Community examples
+- Conference presentations
+- Social media posts
+- AI-generated content
 
-## React Documentation
-
-### Use For
-
-* Framework-specific accessibility guidance
-* React implementation details
-* Component behavior
-
----
-
-## Next.js Documentation
-
-### Use For
-
-* Next.js accessibility guidance
-* Routing behavior
-* Framework implementation details
-
----
-
-# Accessibility Testing Tools
-
-## axe-core
-
-### Use For
-
-* Automated accessibility testing
-* Common accessibility rule validation
-* Accessibility linting and CI workflows
-
-### Notes
-
-Automated testing should supplement, not replace, manual accessibility review.
-
----
-
-# Source Selection Guidelines
-
-When evaluating a finding:
-
-1. Prefer authoritative standards.
-2. Prefer official documentation over community interpretations.
-3. Prefer current versions over historical guidance.
-4. Prefer evidence-backed findings over assumptions.
-5. Escalate to human review when guidance is ambiguous.
-
----
-
-# Non-Authoritative Sources
-
-The following may provide useful context but should not be treated as primary evidence:
-
-* Blog posts
-* Tutorials
-* Forum discussions
-* Stack Overflow answers
-* Conference presentations
-* Social media posts
-* AI-generated content
-
-These sources may be used to explain a concept but should not be used as the sole justification for an accessibility finding.
+These sources may help explain a concept, but they should not be the sole basis for a standards-based accessibility finding.

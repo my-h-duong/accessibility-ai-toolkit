@@ -30,12 +30,12 @@ While the visible labels are correct, assistive technology users may have diffic
 
 Repeated field groups commonly appear in:
 
-* Contact lists
-* Household members
-* Project locations
-* Team members
-* References
-* Emergency contacts
+- Contact lists
+- Household members
+- Project locations
+- Team members
+- References
+- Emergency contacts
 
 The challenge is not that the field labels are incorrect.
 
@@ -49,10 +49,10 @@ Provide additional context through semantic grouping and descriptive relationshi
 
 Preferred techniques include:
 
-* `fieldset` and `legend`
-* `aria-describedby`
-* Section headings
-* Programmatic relationships to group labels
+- `fieldset` and `legend`
+- `aria-describedby`
+- Section headings
+- Programmatic relationships to group labels
 
 ## Avoid
 
@@ -123,22 +123,40 @@ When a native grouping element is appropriate, prefer native HTML.
 
 When reviewing repeated field groups:
 
-* Verify each field has an appropriate visible label.
-* Verify users can determine which group a field belongs to.
-* Prefer semantic grouping before ARIA solutions.
-* Ensure contextual information is available to assistive technology users.
-* Confirm visible labels and accessible names remain aligned.
+- Verify each field has an appropriate visible label.
+- Verify users can determine which group a field belongs to.
+- Prefer semantic grouping before ARIA solutions.
+- Ensure contextual information is available to assistive technology users.
+- Confirm visible labels and accessible names remain aligned.
+
+## Finding Guidance
+
+Use this pattern when a finding involves repeated controls whose visible labels are correct but whose group context may be unclear.
+
+Finding framing:
+
+- Describe the repeated field label that appears more than once.
+- Describe the group context users need in order to distinguish the fields.
+- Explain whether that context is visible only, programmatic only, or missing altogether.
+- Recommend preserving the visible label while adding grouping or descriptive context.
+
+Common evidence to capture:
+
+- Repeated visible labels such as `First Name` or `Phone Number`
+- The heading, legend, or section label that should provide context
+- Whether the group relationship is exposed programmatically
+- Whether the implementation changes the accessible name instead of supplementing it
 
 ## References
 
 Reference Level: A
 
-* WCAG 2.2
-* WAI-ARIA Authoring Practices Guide (APG)
-* HTML Living Standard
+- WCAG 2.2
+- WAI-ARIA Authoring Practices Guide (APG)
+- HTML Living Standard
 
 ## Related Principles
 
-* Native HTML First
-* Preserve Accessible Names
-* Evidence Over Opinion
+- Semantic HTML First
+- Preserve Accessible Names
+- Evidence Over Assumption
