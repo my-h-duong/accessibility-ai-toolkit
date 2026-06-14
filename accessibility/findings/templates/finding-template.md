@@ -4,17 +4,15 @@ Severity:
 - Error
 - Warning
 - Suggestion
+- Needs Review
 
 Confidence:
 - High
 - Medium
 - Low
 
-Observed Issue:
-- What is happening?
-
-Evidence:
-- What was observed
+Human Review Required:
+- Yes / No
 
 Source Trust Level:
 - A
@@ -23,18 +21,31 @@ Source Trust Level:
 - D
 - E
 
-References:
-- Reference name or source
+Observed Issue:
+- What is happening?
+- Describe the user-impacting issue in one or two direct statements.
 
-Related Principle:
+Evidence:
+- What was observed
+- Include the concrete behavior, markup, content, interaction, or state that supports the finding.
+
+Related Principles:
+- Principle name
 - Principle name
 
-Related Pattern:
+Related Patterns:
+- Pattern name when applicable
 - Pattern name when applicable
 
-Recommendation:
+References:
+- Reference name or source
+- Reference name or source
 
 Reasoning:
+- Explain why the observed issue matters and how the references support the finding.
 
-Human Review Required:
-- Yes / No
+Recommendation:
+- State the preferred remediation direction.
+
+Remediation Notes:
+- Add implementation notes, tradeoffs, or follow-up review guidance when useful.
