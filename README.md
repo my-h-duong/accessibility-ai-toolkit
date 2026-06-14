@@ -1,14 +1,16 @@
 # AI Toolkit
 
-A collection of reusable knowledge, workflows, checklists, and patterns that can be consumed by AI systems.
+A repository of reusable accessibility knowledge, review workflows, checklists, patterns, findings, and references.
 
 Goals:
 
 - Capture expertise in a reusable format
-- Support Claude Code, OpenAI, Cursor, and future tools
+- Improve consistency and quality of accessibility review
+- Keep canonical guidance organized by artifact type
+- Support future adapter packaging without making adapters the source of truth
 - Improve consistency and quality of AI-assisted work
 - Reduce prompt repetition
 
-The toolkit is tool-agnostic first.
+Canonical repository content lives under [`accessibility/`](./accessibility/README.md).
 
-Adapters for specific AI platforms may be added later.
+Tool-specific packaging may be added later under [`adapters/`](./adapters/README.md).

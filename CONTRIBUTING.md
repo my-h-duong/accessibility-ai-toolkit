@@ -19,13 +19,13 @@ Examples:
 
 - `docs: add accessibility principles`
 - `docs(patterns): add persistent help text pattern`
-- `feat(claude): add accessibility review skill`
+- `feat(adapters): add tool packaging support`
 - `chore: add contributing guide`
 
 ## Commit types
 
 - `docs` — documentation, principles, patterns, checklists
-- `feat` — new toolkit capability, skill, command, or agent
+- `feat` — new toolkit capability, workflow, adapter, or support asset
 - `fix` — correction to existing guidance
 - `chore` — repo setup and maintenance
 - `refactor` — reorganizing without changing meaning
