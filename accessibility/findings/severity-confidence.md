@@ -1,4 +1,4 @@
-# Finding Severity And Confidence
+# Finding Severity and Confidence
 
 This guide defines how to assign severity, confidence, and human review status for accessibility findings.
 
