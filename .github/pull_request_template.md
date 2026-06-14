@@ -4,12 +4,14 @@ What changed?
 
 ## Type of change
 
-- [ ] Docs
+- [ ] Principle
 - [ ] Pattern
+- [ ] Workflow
 - [ ] Checklist
-- [ ] Skill
-- [ ] Agent
-- [ ] Repo maintenance
+- [ ] Finding
+- [ ] Reference
+- [ ] Adapter
+- [ ] Repository maintenance
 
 ## Why this matters
 
